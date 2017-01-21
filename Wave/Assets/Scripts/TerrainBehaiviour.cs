@@ -11,9 +11,10 @@ public class TerrainData
 {
     public float waitTime;
     public float secPerPeriod;
-    public float Amplitud = 3f;
-    public desplazamiento desplazamiento = desplazamiento.senosoidal;
-    public int periods = 20;
+    public float Amplitud ;
+    public desplazamiento desplazamiento;
+    public float periods;
+    public bool positiveWave;
 }
 
 public class TerrainBehaiviour : MonoBehaviour
@@ -34,7 +35,9 @@ public class TerrainBehaiviour : MonoBehaviour
 
     private Vector3 initialPos;
     [SerializeField]
-    private bool move = false;
+    public bool move = false;
+
+
 
     // Use this for initialization
     void Start()
@@ -59,14 +62,21 @@ public class TerrainBehaiviour : MonoBehaviour
 
         if (value)
         {
-            SetTimeToReach();
-            this.move = value;
+            StartCoroutine(startThisThing());
         }
+    }
+
+    IEnumerator startThisThing()
+    {
+        yield return new WaitForSeconds(offset);
+        SetTimeToReach();
+        this.move = true;
     }
 
     void SetTimeToReach()
     {
-        this.timeToReach = Time.fixedTime + (data.secPerPeriod * data.periods) - offset;
+        //this.timeToReach = Time.fixedTime + (data.secPerPeriod * data.periods) - offset;
+        this.timeToReach = (data.secPerPeriod * data.periods);
         this.startTime0f = Time.fixedTime;
     }
 
@@ -85,28 +95,34 @@ public class TerrainBehaiviour : MonoBehaviour
 
     bool criteria()
     {
-        bool value;
+        bool value = false;
 
-        //value = (((Time.time + offset) / data.secPerPeriod <= data.periods) && ((Time.time + offset) > data.waitTime));
-
-        value = (Time.fixedTime <= this.timeToReach);
-
+        value = (Time.fixedTime - this.startTime0f <= this.timeToReach);
         return value;
     }
 
     bool isImpulse()
     {
-        return (Mathf.Abs(currTheta - Mathf.PI / 2) < Mathf.PI / 8) && this.move;
+        //return (Mathf.Abs(currTheta - Mathf.PI / 2)  < Mathf.PI / 8) && this.move;
+        return (Mathf.Abs(currSin - 1) < Mathf.Sin(Mathf.PI / 8)) && this.move;
+
     }
 
+
+    float isPositiveWave()
+    {
+        return (this.data.positiveWave) ? 1f : -1f;
+    }
 
     void waveMove()
     {
 
         if (criteria())
         {
-            currTheta = 2 * Mathf.PI * (Time.time + offset) / data.secPerPeriod % (2 * Mathf.PI);
-            currSin = Mathf.Sin(currTheta);
+
+            currTheta = 2 * Mathf.PI * (Time.fixedTime - this.startTime0f) / data.secPerPeriod % (2 * Mathf.PI);
+
+            currSin = isPositiveWave() * Mathf.Sin(currTheta);
             transform.position = new Vector3(transform.position.x, centerCube + data.Amplitud * currSin, transform.position.z);
         }
         else
