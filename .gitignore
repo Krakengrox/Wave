@@ -57,6 +57,6 @@ sysinfo.txt
 **/UnityVS.meta
 **/UnityVS/**
 *.vs
-**/UnityVS.meta
+**/VSCode.meta
 *.vscode
 **/VSCode/
