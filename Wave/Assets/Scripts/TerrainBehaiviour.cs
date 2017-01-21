@@ -5,9 +5,11 @@ public class TerrainBehaiviour : MonoBehaviour
 {
 
     public float offset;
+    public float waitTime;
+    public float secPerPeriod = 1f;
     private Rigidbody2D rb;
     public float Amplitud = 3f;
-    private int periods = 2;
+    private int periods = 20;
     private float currTheta;
     private float currSin;
     public AreaEffector2D impulse;
@@ -21,16 +23,19 @@ public class TerrainBehaiviour : MonoBehaviour
         initImpulse = impulse.forceMagnitude;
         centerCube = this.transform.position.y;
         upLimit = centerCube + this.transform.localScale.y/2;
-        
+        waitTime = 20f;
+
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         //transform.Translate(transform.up* Amplitud * (Mathf.Sin(2 * Mathf.PI * Time.time)));
-        if (Time.time + offset <= periods ) {
+        if ( ((Time.time + offset)<= periods)   && ((Time.time + offset) > waitTime))  {
             currTheta = 2 * Mathf.PI * (Time.time + offset) % (2 * Mathf.PI);
             currSin = Mathf.Sin(currTheta);
+            print(Time.time);
             transform.position = new Vector3(transform.position.x, centerCube + Amplitud * currSin, transform.position.z);
             //rb.velocity = new Vector2(0f, Amplitud * (Mathf.Sin(2 * Mathf.PI * (Time.time + offset))));
             //rb.velocity = transform.up * Amplitud * (Mathf.Sin(2 * Mathf.PI * Time.time));
