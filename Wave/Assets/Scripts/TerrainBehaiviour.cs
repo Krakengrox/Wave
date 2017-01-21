@@ -7,7 +7,7 @@ public class TerrainBehaiviour : MonoBehaviour
     public float offset;
     private Rigidbody2D rb;
     public float Amplitud = 3f;
-    private int periods = 2;
+    private int periods = 40;
     private float currTheta;
     private float currSin;
     public AreaEffector2D impulse;
