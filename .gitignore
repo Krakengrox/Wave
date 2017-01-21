@@ -43,7 +43,7 @@ Thumbs.db
 *.pidb
 *.userprefs
 *.vscode
-**/VSCode/
+**/VSCode/**
 # Unity3D generated meta files #
 ################################
 *.pidb.meta
