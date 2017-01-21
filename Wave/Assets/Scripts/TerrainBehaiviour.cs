@@ -6,7 +6,7 @@ public class TerrainBehaiviour : MonoBehaviour
 
     public float offset;
     public float waitTime;
-    public float secPerPeriod = 1f;
+    public float secPerPeriod;
     private Rigidbody2D rb;
     public float Amplitud = 3f;
     private int periods = 20;
@@ -23,7 +23,8 @@ public class TerrainBehaiviour : MonoBehaviour
         initImpulse = impulse.forceMagnitude;
         centerCube = this.transform.position.y;
         upLimit = centerCube + this.transform.localScale.y/2;
-        waitTime = 20f;
+        waitTime = 4f;
+        secPerPeriod = 2f;
 
 
     }
@@ -32,8 +33,8 @@ public class TerrainBehaiviour : MonoBehaviour
     void FixedUpdate()
     {
         //transform.Translate(transform.up* Amplitud * (Mathf.Sin(2 * Mathf.PI * Time.time)));
-        if ( ((Time.time + offset)<= periods)   && ((Time.time + offset) > waitTime))  {
-            currTheta = 2 * Mathf.PI * (Time.time + offset) % (2 * Mathf.PI);
+        if ( ((Time.time + offset)/ secPerPeriod <= periods)   && ((Time.time + offset) > waitTime))  {
+            currTheta = 2 * Mathf.PI * (Time.time + offset) / secPerPeriod % (2 * Mathf.PI);
             currSin = Mathf.Sin(currTheta);
             print(Time.time);
             transform.position = new Vector3(transform.position.x, centerCube + Amplitud * currSin, transform.position.z);
