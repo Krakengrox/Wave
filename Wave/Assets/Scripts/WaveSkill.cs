@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class WaveSkill : MonoBehaviour {
 
-    public TerrainBehaiviour.Data skillConfig;
+    public TerranSuperData skillConfig;
     PlatformManager platformManager;
-    // Use this for initialization
 
+    // Use this for initialization
     void Start () {
         init();
 	}
@@ -19,7 +19,7 @@ public class WaveSkill : MonoBehaviour {
 
     public void TriggerSkill()
     {
-        platformManager.DoWave();
+        platformManager.DoWave(skillConfig);
     }
 
 	// Update is called once per frame

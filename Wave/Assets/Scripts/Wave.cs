@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Wave : MonoBehaviour {
 
-    public TerrainBehaiviour.Data wave;
+    public TerrainData wave;
 
 	// Use this for initialization
 	void Start () {
