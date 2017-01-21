@@ -42,8 +42,7 @@ Thumbs.db
 *.user
 *.pidb
 *.userprefs
-*.vscode
-**/VSCode/**
+
 # Unity3D generated meta files #
 ################################
 *.pidb.meta
@@ -58,5 +57,6 @@ sysinfo.txt
 **/UnityVS.meta
 **/UnityVS/**
 *.vs
-#TapWarriors/ProjectSettings/ProjectSettings.asset
-TapWarriors/ProjectSettings/GraphicsSettings.asset
+**/UnityVS.meta
+*.vscode
+**/VSCode/
