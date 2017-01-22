@@ -8,6 +8,7 @@ public class EnableAfterSomeTime : MonoBehaviour
 
     public GameObject[] targets;
     public float delay = 0;
+    public Actions.Action atStart;
     public Actions.Action isDone;
     // Use this for initialization
     void Start()
@@ -18,6 +19,7 @@ public class EnableAfterSomeTime : MonoBehaviour
     // Update is called once per frame
     void Init()
     {
+        atStart.invoke();
         foreach (GameObject target in targets)
         {
             target.SetActive(false);
