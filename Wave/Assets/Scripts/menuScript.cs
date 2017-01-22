@@ -10,15 +10,27 @@ public class menuScript : MonoBehaviour {
 	public GameObject gameOver;
 	public GameObject confirmQuit;
 	public GameObject level1;
+	public GameObject squirrel;
+	public GameObject GGJ;
+	private float counterStart;
+	private float GGJLenght = 100f;
+	private bool boolStartingGGJ;
+	private bool boolStartingSquirrel;
 
 
 	// Use this for initialization
 	void Start () {
+
+		GGJ.SetActive (true);
+		squirrel.SetActive (false);
 		startMenu.SetActive (true);
 		credits.SetActive (false);
 		gameOver.SetActive (false);
 		confirmQuit.SetActive (false);
 		level1.SetActive (false);
+
+		boolStartingGGJ = true;
+		boolStartingSquirrel = false;
 
 
 	}
@@ -60,6 +72,16 @@ public class menuScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		
+		counterStart = counterStart + Time.time;
+		if (counterStart >= GGJLenght && boolStartingGGJ) {
+			GGJ.SetActive (false);
+			squirrel.SetActive (true);
+			boolStartingGGJ = false;
+			boolStartingSquirrel = true;
+		}
+		if (counterStart >= GGJLenght*2 && boolStartingSquirrel) {
+			squirrel.SetActive (false);
+			boolStartingSquirrel = false;
+		}
 	}
 }
