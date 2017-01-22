@@ -5,15 +5,15 @@ using UnityEngine.UI;
 
 public class PlayerManager : GameElement {
 
-	#region Variables
-
+    #region Variables
+    public System.Action deadEvent;
 	public override GameObject elementObject { get; set; }
 
 	public override ELEMENTTYPE elemetSide { get { return ELEMENTTYPE.PLAYER; } set { this.elemetSide = value; } }
 
 	public override Rigidbody2D rb { get; protected set; }
 
-	public Text pointCount; 
+	public Text pointCount;
 	public int point;
 	public void Init(Rigidbody2D rb)
 	{
@@ -23,6 +23,7 @@ public class PlayerManager : GameElement {
 	{
 		base.Dead ();
 		this.elementObject.SetActive(false);
+        this.deadEvent();
 	}
 	public override void Point (int pointCount)
 	{
