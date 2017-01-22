@@ -57,5 +57,5 @@ sysinfo.txt
 **/UnityVS.meta
 **/UnityVS/**
 *.vs
-#TapWarriors/ProjectSettings/ProjectSettings.asset
-TapWarriors/ProjectSettings/GraphicsSettings.asset
+*/ProjectSettings.asset
+*/GraphicsSettings.asset
