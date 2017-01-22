@@ -44,6 +44,7 @@ public class PlatformManager : Singleton<PlatformManager>
             terrainBehaiviour.gameObject.name = i.ToString();
             terrainBehaiviour.transform.position = new Vector3(xoffsetStep + (startOffset * i), 0, 0);
             terrainBehaiviour.transform.parent = this.transform;
+            terrainBehaiviour.gameObject.SetActive(true);
         }
     }
 
