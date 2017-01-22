@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: c56952a0f9d193d4c9ab35cb04aea6d5
+timeCreated: 1485102235
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: CF Plants and Flowers
+  fontNames:
+  - CF Plants and Flowers
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
