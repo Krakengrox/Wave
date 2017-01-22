@@ -1,0 +1,216 @@
+fileFormatVersion: 2
+guid: be055c4063b08d047bf98a734ffe1d26
+timeCreated: 1485102610
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ArdilaFlipBook_0
+    21300002: ArdilaFlipBook_1
+    21300004: ArdilaFlipBook_2
+    21300006: ArdilaFlipBook_3
+    21300008: ArdilaFlipBook_4
+    21300010: ArdilaFlipBook_5
+    21300012: ArdilaFlipBook_6
+    21300014: ArdilaFlipBook_7
+    21300016: ArdilaFlipBook_8
+    21300018: ArdilaFlipBook_9
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ArdilaFlipBook_0
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1205
+        width: 531
+        height: 532
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArdilaFlipBook_1
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 1205
+        width: 455
+        height: 564
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArdilaFlipBook_2
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 1205
+        width: 529
+        height: 597
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArdilaFlipBook_3
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 1207
+        width: 442
+        height: 567
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArdilaFlipBook_4
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 576
+        width: 524
+        height: 618
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArdilaFlipBook_5
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 606
+        width: 530
+        height: 532
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArdilaFlipBook_6
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 606
+        width: 524
+        height: 588
+      alignment: 9
+      pivot: {x: 0.5, y: -0.0062254593}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArdilaFlipBook_7
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 2
+        width: 455
+        height: 564
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArdilaFlipBook_8
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 4
+        width: 529
+        height: 598
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ArdilaFlipBook_9
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 5
+        width: 442
+        height: 594
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

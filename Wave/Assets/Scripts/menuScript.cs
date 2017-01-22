@@ -72,6 +72,11 @@ public class menuScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+        //fade();
+	}
+
+    void fade()
+    {
 		counterStart = counterStart + Time.time;
 		if (counterStart >= GGJLenght && boolStartingGGJ) {
 			GGJ.SetActive (false);
@@ -83,5 +88,5 @@ public class menuScript : MonoBehaviour {
 			squirrel.SetActive (false);
 			boolStartingSquirrel = false;
 		}
-	}
+    }
 }
