@@ -57,5 +57,3 @@ sysinfo.txt
 **/UnityVS.meta
 **/UnityVS/**
 *.vs
-*/ProjectSettings.asset
-*/GraphicsSettings.asset
