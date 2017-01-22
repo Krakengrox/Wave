@@ -1052,6 +1052,18 @@ Prefab:
       propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114448187462682004, guid: 050a51adf5e9adf4e8bb40d0642d7d44,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1d883c3ce9fe20e4b83c8b67049153dd,
+        type: 3}
+    - target: {fileID: 114750722482591718, guid: 050a51adf5e9adf4e8bb40d0642d7d44,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8e57ea5c2ecfe9f46982c4e74df044c5,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 050a51adf5e9adf4e8bb40d0642d7d44, type: 2}
   m_IsPrefabParent: 0
