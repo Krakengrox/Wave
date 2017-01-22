@@ -14,8 +14,8 @@ public class PlayerController : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        velocity = 10f;
-        verticalImpulse = 20f;
+        //velocity = 10f;
+        //verticalImpulse = 20f;
         Manager.gManager.player = this;	
 		this.playerManager = new PlayerManager ();
 		this.playerManager.elementObject = this.gameObject;
