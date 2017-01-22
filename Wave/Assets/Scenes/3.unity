@@ -2306,15 +2306,15 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 491561501}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4440462467617502, guid: 26289c0a22de55740a53397c68c58725, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 22.983145
+      value: 5.2
       objectReference: {fileID: 0}
     - target: {fileID: 4440462467617502, guid: 26289c0a22de55740a53397c68c58725, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -10
+      value: 11.583744
       objectReference: {fileID: 0}
     - target: {fileID: 4440462467617502, guid: 26289c0a22de55740a53397c68c58725, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2338,7 +2338,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4440462467617502, guid: 26289c0a22de55740a53397c68c58725, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 20160591962857510, guid: 26289c0a22de55740a53397c68c58725,
         type: 2}
@@ -2347,11 +2347,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4440462467617502, guid: 26289c0a22de55740a53397c68c58725, type: 2}
       propertyPath: m_LocalScale.x
-      value: 4.890031
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4440462467617502, guid: 26289c0a22de55740a53397c68c58725, type: 2}
       propertyPath: m_LocalScale.y
-      value: 2.1709602
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 26289c0a22de55740a53397c68c58725, type: 2}
@@ -2815,9 +2815,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1109110436}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6373aa0b11ef07b45a9736fa9403bd86, type: 3}
+  m_Script: {fileID: 11500000, guid: 9fe6f974a865d4f449470e58f3be661f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 491561501}
+  distance: -10
+  height: 0
+  damping: 5
+  mapX: 100
+  mapY: 100
 --- !u!1 &1128929961
 GameObject:
   m_ObjectHideFlags: 0
