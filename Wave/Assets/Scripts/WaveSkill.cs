@@ -34,12 +34,19 @@ public class WaveSkill : MonoBehaviour
 
     public float delay = 0f;
 
+    public bool loop = false;
     IEnumerator triggerSkill()
     {
-        foreach (var skillConfig in this.skillConfigs)
+        bool once = true;
+        while (loop || once)
         {
-            platformManager.DoWave(skillConfig);
-            yield return new WaitForSeconds(this.delay);
+            if (once) once = false;
+
+            foreach (var skillConfig in this.skillConfigs)
+            {
+                platformManager.DoWave(skillConfig);
+                yield return new WaitForSeconds(this.delay);
+            }
         }
     }
 
