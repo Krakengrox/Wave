@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     public float verticalImpulse;
 	PlayerManager playerManager = null;
 	public Text countPoint;
+	Vector3 movement;
+	public float speed = 10f;
 
     void Awake()
     {
@@ -27,12 +29,26 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey("space"))
-        {
-            rb.AddForce(transform.up * verticalImpulse);
-        }
+       // if (Input.GetKey("space"))
+       // {
+        //    rb.AddForce(transform.up * verticalImpulse);
+        //}
 
         //rb.AddForce(transform.forward * velocity * Input.GetAxis("Horizontal"));
-        rb.AddForce (transform.right *velocity * Input.GetAxis("Horizontal"));
+       // rb.AddForce (transform.right *velocity * Input.GetAxis("Horizontal"));
+		Move();
+
     }
+
+	void Move()
+	{
+
+			movement.Set(Input.GetAxisRaw("Horizontal"), 0f, 0f);
+
+		movement = movement.normalized * speed * Time.deltaTime;
+
+		this.transform.Translate(movement);
+
+	}
+
 }
